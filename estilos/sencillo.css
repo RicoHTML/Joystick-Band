@@ -1,0 +1,41 @@
+@import url('style.css');
+
+.table-container {
+  margin-top: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+thead {
+  background: var(--color-primario);
+  color: var(--color-secundario);
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Alternar filas para más legibilidad */
+tbody tr:nth-child(even) {
+  background: #2a2a40;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background: #f4f4f4;
+  color: #111;
+}
+
+tbody tr:hover {
+  background: var(--color-hover);
+  color: white;
+  transition: 0.3s;
+}

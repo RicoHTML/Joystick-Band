@@ -1,0 +1,85 @@
+@import url('style.css');
+
+/* Título */
+main h1 {
+  text-align: center;
+  color: var(--color-secundario);
+  margin: 20px 0 40px;
+  font-size: 2rem;
+}
+
+/* Dos columnas */
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 25px;
+  padding: 0 10%;
+  justify-items: center;
+}
+
+/* Cada álbum */
+.album {
+  position: relative;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 15px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  max-width: 280px;
+  width: 100%;
+}
+
+.album img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.album:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay con info al hover */
+.overlay {
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 8px;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.album:hover .overlay {
+  opacity: 1;
+}
+
+
+.album h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Botón de escuchar */
+.listen-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  background: var(--color-secundario);
+  color: #111;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.listen-btn:hover {
+  background: var(--color-hover);
+  color: white;
+}
