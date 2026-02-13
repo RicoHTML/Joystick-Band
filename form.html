@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joystick - Contacto</title>
+  <link rel="stylesheet" href="estilos/form.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="Logo de la banda Joystick"></a></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="album.html">Álbumes</a></li>
+        <li><a href="sencillos.html">Sencillos</a></li>
+        <li><a href="gira.html">De gira</a></li>
+      </ul>
+    </nav>
+    <a href="form.html" class="boton"><button>Contáctanos</button></a>
+  </header>
+
+  <main class="form-section">
+    <!-- Imagen lateral -->
+    <div class="form-image">
+      <img src="img/form.jpg" alt="Imagen representativa de Joystick">
+      <div class="overlay"></div>
+      <h2 class="overlay-text">Únete a nuestra historia</h2>
+    </div>
+
+    <!-- Formulario -->
+    <div class="form-container">
+      <h1>Búsqueda de Programador</h1>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="form-group">
+          <label for="experiencia">Experiencia (años)</label>
+          <input type="number" id="experiencia" name="experiencia" min="0" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lenguajes">Lenguajes de Programación</label>
+          <textarea id="lenguajes" name="lenguajes"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="cv">Adjuntar CV</label>
+          <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+        </div>
+
+        <button type="submit">Enviar Solicitud</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Rico Agustín - 6° secundaria San Mauro</p>
+  </footer>
+</body>
+
+</html>
